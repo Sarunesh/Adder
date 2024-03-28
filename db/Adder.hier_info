@@ -1,0 +1,119 @@
+|RCA
+s[1] <= FA:full_adder_inst[1].FA_inst.sum
+s[2] <= FA:full_adder_inst[2].FA_inst.sum
+s[3] <= FA:full_adder_inst[3].FA_inst.sum
+s[4] <= FA:full_adder_inst[4].FA_inst.sum
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+
+
+|RCA|FA:full_adder_inst[1].FA_inst
+sum <= HA:h2.port0
+cout <= O1.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|RCA|FA:full_adder_inst[1].FA_inst|HA:h1
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[1].FA_inst|HA:h2
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[2].FA_inst
+sum <= HA:h2.port0
+cout <= O1.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|RCA|FA:full_adder_inst[2].FA_inst|HA:h1
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[2].FA_inst|HA:h2
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[3].FA_inst
+sum <= HA:h2.port0
+cout <= O1.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|RCA|FA:full_adder_inst[3].FA_inst|HA:h1
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[3].FA_inst|HA:h2
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[4].FA_inst
+sum <= HA:h2.port0
+cout <= O1.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|RCA|FA:full_adder_inst[4].FA_inst|HA:h1
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+
+|RCA|FA:full_adder_inst[4].FA_inst|HA:h2
+sum <= X1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= A1.DB_MAX_OUTPUT_PORT_TYPE
+a => X1.IN0
+a => A1.IN0
+b => X1.IN1
+b => A1.IN1
+
+

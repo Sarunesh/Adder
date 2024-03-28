@@ -1,0 +1,22 @@
+// Design Code
+
+module HA(output sum, carry, input a, b);
+	xor X1(sum, a, b);
+	and A1(carry, a, b);
+endmodule
+
+// Testbench Code
+
+module tb_HA();
+	reg a, b;
+	wire s, cout;
+	HA dut(.sum(s), .carry(cout), .a(a), .b(b));
+	initial
+		begin
+			a=1'b0; b=1'b0;
+			#2 a=1'b0; b=1'b1;
+			#2 a=1'b1; b=1'b1;
+			#2 a=1'b1; b=1'b0;
+			$finish;
+		end
+endmodule
